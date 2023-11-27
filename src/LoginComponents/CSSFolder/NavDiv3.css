@@ -1,0 +1,9 @@
+@media (max-width: 1000px) {
+    #line {
+      display: none;
+    }
+
+    #points{
+        display: none;
+    }
+  }

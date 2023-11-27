@@ -1,0 +1,43 @@
+#container{
+    background-color: silver;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5ch;
+    opacity: 1;
+    box-shadow:0.2ch 0.3ch 0.2ch;
+}
+#all{
+    text-align: center;
+}
+#Reg_input{
+    border-radius: 1ch;
+    margin-bottom:1%;
+    padding: 1.4%;
+    font-size: 1.7ch;
+    border-width: 1.7px;
+    border-color: #d9d5da;
+    background-color: white;
+}
+
+#Reg_lables{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#SignIn_btn{
+    color:'black';
+    font-size: 'Roboto';
+}
+
+#SignIn_btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#register_logo{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}

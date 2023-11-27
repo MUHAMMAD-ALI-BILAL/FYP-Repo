@@ -1,0 +1,56 @@
+.error-message {
+  left: 0%;
+  z-index: 10;
+  color: red;
+  margin-top: 10px;
+}
+
+#home{
+  background-color: rgba(255, 255, 255, 0.4);
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 2%;
+  border-radius: 1ch;
+}
+
+#footer {
+  border: 2px solid;
+  border-image: linear-gradient(to right, rgb(205, 124, 83), rgb(83, 105, 205));
+  border-image-slice: 1;
+  /* border: 2px solid rgb(205, 124, 83); */
+  padding: 10px;
+  color: white;
+  background-color: #0f172a;
+}
+/* This going here */
+
+#resContainer{
+  width:100%;
+  height: auto;
+  background-color: white;
+  padding-top: 3ch;
+  /*Add flex Style */
+  display: grid;
+  /* flex-direction: row; */
+  /* justify-content: space-around; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5px;
+  padding: 2ch;
+}
+
+#box{
+  /* width:40%; */
+  /* height: 300px; */
+  background-color: white;
+  margin: 5px;
+  box-sizing: border-box;
+  /* font-size: 50px; */
+}
+
+
+#box:hover{
+  cursor: pointer;
+  border-color: black;
+}
+

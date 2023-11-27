@@ -1,0 +1,36 @@
+#footer_main {
+    margin-top: 11ch;
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with a minimum column width of 300px */
+    gap: 20px; /* Adjust the gap between columns as needed */
+    padding: 20px; /* Adjust the overall padding of the footer */
+    background-color: white; /* Set the background color of the footer */
+    color: black; /* Set the text color */
+  }
+  
+  #footer-column {
+    padding: 15px; /* Adjust the padding inside each column */
+    /* border: 1px solid #555; Add a border for separation (optional) */
+  }
+
+  #footer_heading{
+    font-weight: 500;
+    font-size:large;
+  }
+
+  #footer_ul ul li {
+    color: #515251; /* Set your desired text color */
+    margin-top: 1ch;
+  }
+  #footer_ul ul li:hover {
+    color: #6e7889; /* Set your desired text color */
+    /* margin-top: 1ch; */
+  }
+  /* 6e7889 */
+
+
+  #footer-logo{
+    width: 80%;
+    padding: 0%;
+  }

@@ -1,0 +1,40 @@
+#DivStartBtn{
+    background-color: #f97316;
+  }
+  #DivStartBtn:hover{
+    background-color: #f58549;
+  }
+
+#span{
+    background-color: #0f172a;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /* padding-top: 20ch; */
+}
+#borderleft{
+    font-family: 'Poppins', sans-serif;
+    border-left-width: medium;
+    border-left-color: #dcfc35;
+    padding-left: 2ch;
+}
+
+
+@media (max-width: 600px) {
+
+    #span{
+        background-color: #0f172a;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        /* padding-top: 20ch; */
+    }
+    #borderleft{
+        font-family: 'Poppins', sans-serif;
+        border-left-width: medium;
+        border-left-color: #f97316;
+        padding-left: 2ch;
+    }
+   
+  }
+  

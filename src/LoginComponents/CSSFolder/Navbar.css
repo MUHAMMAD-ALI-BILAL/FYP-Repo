@@ -1,0 +1,450 @@
+#signin{
+  color: white;
+}
+#signin:hover{
+  text-decoration: underline;
+}
+#getstarted{
+  background-color: #f97316;
+}
+#getstarted:hover{
+  background-color: #f58549;
+}
+dc6626
+f97316
+#divnav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  #notofications {
+    color: white;
+    padding: 14px;
+    font-size: 23px;
+    margin-right: 2ch;
+  }
+  
+  #Login {
+    color: black;
+    padding: 14px;
+    font-size: 17px;
+    background-color: #fff44f;
+    margin-right: 2ch;
+  }
+  
+  
+  #circle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2ch;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff44f;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #circle-button:hover {
+    background-color: #fff44f;
+  }
+  
+  #circle-button:focus {
+    outline: none;
+  }
+  
+  #circle-button svg {
+    color: black;
+    font-size: 30px;
+  }
+  
+  
+  
+  #topnav {
+      overflow: hidden;
+      background-color: black;
+      height: 100%;
+    }
+    #icon{
+      color: white;
+      padding: 2ch;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Vertically center the child elements */
+    }
+    
+    #topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    #topnav a:hover {
+      color: #FFF44F;
+    }
+    
+    #topnav a#active {
+      background-color: black;
+      color: white;
+    }
+    
+    #topnav #icon {
+      display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+      #topnav a:not(:first-child) {
+        display: none;
+      }
+    
+      #topnav #icon {
+        float: right;
+        display: block;
+      }
+    
+      #topnav.responsive #icon {
+        float: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    
+      #topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+  
+      #topnav.responsive #Login {
+        float: none;
+        position: absolute;
+        margin-right: 2ch;
+        right: 0;
+        top: 0;
+        margin-right: 5.5ch;
+      }
+      #Login{
+        float: none;
+        position: absolute;
+        margin-right: 2ch;
+        right: 0;
+        top: 0;
+        margin-right: 5.5ch;
+      }
+  
+      #topnav.responsive #circle-button {
+        position: fixed;
+        top: 10px; /* Adjust the top position as needed */
+        right: 40px; /* Adjust the right position as needed */
+        z-index: 9999;
+      }
+  
+      #topnav.responsive #notofications {
+        /* float: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 13ch;
+        color: white; */
+        position: fixed;
+        top: 5px; /* Adjust the top position as needed */
+        right: 113px; /* Adjust the right position as needed */
+        z-index: 9999;
+      }
+      #notofications{
+        position: fixed;
+        top: 5px; /* Adjust the top position as needed */
+        right: 113px; /* Adjust the right position as needed */
+        z-index: 9999;
+        font-size: 18px;
+      }
+      #circle-button{
+        position: fixed;
+        top: 10px; /* Adjust the top position as needed */
+        right: 40px; /* Adjust the right position as needed */
+        z-index: 9999;
+      }
+    }
+  
+  /* //DropDown  CSS*/
+  #dropdown-menu {
+    position: absolute;
+    margin-right: 2ch;
+    top: 50px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color with transparency */
+    backdrop-filter: blur(8px); 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 100;
+  }
+  
+  #user-info {
+    padding: 16px;
+  }
+  
+  #username {
+    font-weight: bold;
+    color: #FFF44F;
+  }
+  
+  #email {
+    color: white;
+    margin-top: 8px;
+  }
+  
+  #logout {
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    color: #e3dbda;
+  }
+  #Logo{
+    font-size:x-large;
+    margin-left: 0.2ch;
+  }
+  
+  #logout:hover {
+    color:white;
+    cursor: pointer;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    #dropdown-menu {
+      min-width: 100%;
+    }
+  }
+  
+  #notificationIcon{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #notificationText{
+    color: #ffffff;
+    font-size: 15.5px;
+  }
+  #notification-info{
+    padding: 16px;
+  
+  }
+
+
+
+
+
+  /* Navbar CSS */
+
+  #main-nav{
+    width: 100%;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 1rem 1fr 2fr 1fr 3rem;
+    background-color:#0f172a;
+  }
+
+  #nav-logo{
+    display: flex;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+    height: 70%;
+    padding: 8%;
+  }
+
+  .menu-link{
+    grid-column: 3/4;
+  }
+  .menu-link ul{
+    color: white;
+    height: 6rem;
+    display: grid;
+    /* justify-content: space-around; */
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    align-items: center;
+  }
+
+  .menu-link ul li:first-child{
+    grid-column: 2/3;
+  }
+
+  #nav-btns{
+    grid-column: 4/5;
+  }
+
+  #nav-btns ul{
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr;
+    align-items: center;
+  }
+
+  #nav-btns ul li{
+    text-align: left;
+    justify-content: space-around;
+  }
+
+  #nav-btns ul li:first-child{
+    grid-column: 2/3;
+  }
+
+  #hamburger-menu {
+   display: none;
+  }
+
+
+  /* His Code */
+
+
+  @media (max-width: 1080px) {
+  #main-nav {
+    height: 5rem;
+  }
+
+  #nav-logo,
+  #menu-link ul,
+  #nav-btns ul {
+    height: 5rem;
+  }
+
+  #nav-btns ul li{
+    text-align: right;
+  }
+
+  .menu-link ul{
+    height: 5rem;
+  }
+}
+
+
+/* responsive css style  */
+ @media (max-width: 998px) {
+  #main-nav {
+    height: 5rem;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+  /* #nav-btns #social-media-desktop{
+    display: none;
+  } */
+
+  #nav-btns {
+    display: none;
+  }
+
+  #signin-getstarted{
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    /* height: 20rem; */
+    display: flex;
+    grid-column: 2/4;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 0.3s linear;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  #signin-getstarted ul {
+    width: 100%;
+    list-style-type: none; /* Remove bullets from the list */
+    display: flex; /* Display list items in a row */
+    flex-direction: column;
+    /* padding-bottom: 2ch; */
+    margin: 0; /* Remove default margin */
+    /* padding: 0; Remove default padding */
+  }
+  
+  #signin-getstarted ul li {
+    margin-right: 20px; /* Add some spacing between list items */
+    padding-bottom: 2ch;
+  }
+  
+  #signin-getstarted button {
+    background-color: burlywood; /* Set the background color for buttons */
+    border: 1px solid #ccc; /* Add a border to buttons for separation */
+    padding: 5px 20px; /* Add some padding to buttons for better appearance */
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  #signin-getstarted button:hover {
+    background-color: #f2f2f2; /* Change background color on hover */
+  }
+
+  #hamburger-menu {
+    display: block;
+    position: absolute; /* Set position to absolute */
+    top: 1rem; /* Adjust the top value to your desired position */
+    right: 1rem; /* Adjust the right value to your desired position */
+    font-size: xx-large;
+    z-index: 100;
+    color: #f2f2f2;
+  }
+
+  #nav-btns #hamburger-menu{
+    display: block;
+    font-size: 2rem;
+    z-index: 100;
+    color: #FFF44F;
+  }
+
+  .mobile-menu-link {
+    grid-column: 2/3;
+    /* position: relative; */
+    z-index: 99;
+  }
+
+  .mobile-menu-link {
+    background-color: white;
+    height: 20rem;
+    display: grid;
+    grid-column: 2/4;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 0.3s linear;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .mobile-menu-link ul {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .mobile-menu-link ul li:first-child {
+    transition-delay: 0.2s;
+  }
+
+  #nav-btns #social-media-desktop {
+    height: 0;
+    display: block;
+    z-index: 100;
+  }
+
+  #nav-btns #hamburger-menu {
+    display: block;
+    font-size: 2rem;
+    height: 0;
+  }
+}

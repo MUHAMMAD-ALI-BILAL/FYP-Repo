@@ -1,0 +1,169 @@
+#Usecaseflex1{
+    width: 30%;
+}
+#flex1{
+    width:35%;
+}
+#flex1_btn{
+    background: #1d4ed8;
+    padding: 3%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#flex1_btn:hover{
+    background-color: #2563eb;
+}
+#flex1_link{
+    align-items: center;
+    text-align: center;
+}
+
+#Usecasespan_text{
+    width: 90%;
+    padding:3%;
+    border:dashed;
+    border-color: #1d4ed8;
+}
+
+#span_text{
+    /* border: 1px #2563eb; */
+    width: 80%;
+    padding:3%;
+    border:dashed;
+    border-color: #1d4ed8;
+}
+#flex2{
+    padding: 2%;
+}
+
+#text-div {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1ch;
+    color: black;
+    left: 35%;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#text-box{
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+    outline: none;
+    width: 100%;
+}
+
+#chat-log{
+    background-color: #a8a7a3;
+    padding: 1ch;
+}
+
+#chat-log-chtagpt{
+    background-color: #d0fae5;
+    padding: 1ch;
+    padding-bottom: 5ch;
+}
+
+#chat-message{
+    padding-left: 15ch;
+    width: 80%;
+    max-width: 80%;
+}
+
+#avatar{
+    background-color: blue;
+    padding: 1ch;
+    border-radius: 50%;
+    font-size: medium;
+    width: 40px;
+    height: 40px;
+}
+
+#avatar-chatgpt{
+    background-color: #0dae7f;
+    font-size: x-large;
+    justify-content: center;
+    padding: 0.5ch;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#message{
+    color: black;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+#button_bg:hover{
+    background-color: #1d4ed8;
+}
+
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+#loading-spinner {
+    width: 20px;
+    height: 20px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#dropdown-menu {
+    display: none;
+}
+
+#show {
+    display: none;
+  }
+  
+  #automate:hover #show {
+    display: block;
+    display: flex;
+    padding-left: 4ch;
+    background-color: white;
+  }
+
+  /* #myScrollbars{
+    width: 10px;
+    scrollbar-color: white;
+    scrollbar-width: 10px;
+  } */
+
+  #scroller {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+  }
+  
+  /* #myScrollbars::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  #myScrollbars::-webkit-scrollbar-thumb {
+    background-color: #888;
+  } */
+
+  .myScrollbarsClass {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+  
