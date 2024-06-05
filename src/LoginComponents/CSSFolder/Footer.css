@@ -34,3 +34,16 @@
     width: 80%;
     padding: 0%;
   }
+
+  .footer-container {
+    background-color: #333; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .copyright-text {
+    font-size: 14px;
+    opacity: 0.9;
+    /* Add more styles as needed */
+  }

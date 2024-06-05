@@ -1,11 +1,76 @@
 import React from 'react';
-import {useNavigate, Link} from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import '../LoginComponents/CSSFolder/Footer.css';
+import jwtDecode from "jwt-decode";
 import pic from '../Pic/Logo2.png'
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+  function BlogPost() {
+    const token = localStorage.getItem("token");
+    if (!isTokenValid(token)) {
+      navigate('/login')
+      return;
+    }
+    else {
+      navigate('/aichat/blogs')
+    }
+  }
+
+  function TwitterTweet() {
+    const token = localStorage.getItem("token");
+    if (!isTokenValid(token)) {
+      navigate('/login')
+      return;
+    }
+    else {
+      navigate('/aichat/tweet')
+    }
+  }
+
+  function CoverLetter() {
+    const token = localStorage.getItem("token");
+    if (!isTokenValid(token)) {
+      navigate('/login')
+      return;
+    }
+    else {
+      navigate('/aichat/coverletter')
+    }
+  }
+
+  function Email() {
+    const token = localStorage.getItem("token");
+    if (!isTokenValid(token)) {
+      navigate('/login')
+      return;
+    }
+    else {
+      navigate('/aichat/email')
+    }
+  }
+
+  function isTokenValid(token) {
+    if (!token) {
+      return false;
+    }
+
+    try {
+      const decoded = jwtDecode(token);
+      if (decoded.exp * 1000 < Date.now()) {
+        return false;
+      }
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
   return (
-    <footer id="footer_main">
+    <>
+      {/* <footer id="footer_main">
       <div id="footer-column">
          <div id='footer-logo'>
           <img src={pic} alt="logo" />
@@ -18,16 +83,16 @@ const Footer = () => {
         <div id='footer_ul'>
         <ul id=''>
           <li>
-            <Link to='/'>Blog Post</Link>
+            <button onClick={BlogPost}>Blog Post</button>
           </li>
           <li>
-            <Link to='/'>Twitter Tweet</Link>
+            <button onClick={TwitterTweet}>Twitter Tweet</button>
           </li>
           <li>
-            <Link to='/'>Cover Letter</Link>
+            <button onClick={CoverLetter}>Cover Letter</button>
           </li>
           <li>
-            <Link to='/'>Email</Link>
+            <button onClick={Email}>Email</button>
           </li>
         </ul>
       </div>
@@ -38,21 +103,23 @@ const Footer = () => {
         <div id='footer_ul'>
         <ul>
           <li>
-            <Link to='/'>Login</Link>
+            <Link to='/login'>Login</Link>
           </li>
           <li>
             <Link to='/'>Register</Link>
           </li>
-          {/* <li>
-            <Link to='/'>Cover Letter</Link>
-          </li>
-          <li>
-            <Link to='/'>Email</Link>
-          </li> */}
+         
         </ul>
       </div>
       </div>
-    </footer>
+    </footer> */}
+
+      <div className="footer-container">
+        <div className="copyright-text">
+          All rights reserved.
+        </div>
+      </div>
+    </>
   );
 };
 
